@@ -32,4 +32,4 @@ The rubric evaluates whether all members contribute actively, collaborate effect
 - [ ] The team agrees on the final project version.
 - [ ] Every member understands the submitted program well enough to explain their contribution.
 
-Record actual contributions. Do not assign work to a member unless they completed it.
+Record actual contributions.
