@@ -1,7 +1,7 @@
 # Screenshot and Demonstration Guide
 
 ## Purpose
-The instructor asks for screenshots in step-by-step / logical order, including the process of opening and using the program. Include instructions. Test-case screenshots must be collected into one PDF or placed inside the ZIP folder.
+Sir Jun asks for screenshots in step-by-step / logical order, including the process of opening and using the program. Include instructions. Test-case screenshots must be collected into one PDF or placed inside the ZIP folder.
 
 ## Capture screenshots in this order
 Use the sequence below as a general evidence structure. Adjust it to match the actual program.
@@ -49,4 +49,3 @@ Write the final user guide only after the project flow and controls are settled.
 5. How to repeat an interaction, if supported.
 6. How to finish or exit.
 
-Replace these general steps with instructions that accurately match the finished program.
