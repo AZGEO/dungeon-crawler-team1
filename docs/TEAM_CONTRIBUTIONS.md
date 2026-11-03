@@ -7,10 +7,10 @@ The rubric evaluates whether all members contribute actively, collaborate effect
 
 | Member name | Agreed role / responsibility | Contact or communication method (optional) |
 |---|---|---|
-| [Member 1] | [To be agreed] | [Optional] |
-| [Member 2] | [To be agreed] | [Optional] |
-| [Member 3] | [To be agreed] | [Optional] |
-| [Add rows as needed] | | |
+| [Consencino] | [To be agreed] | [in-person/online] |
+| [Labra] | [To be agreed] | [in-person/online] |
+| [Lopez] | [To be agreed] | [in-person/online] |
+| [Mamalias] | [To be agreed] | [in-person/online] |
 
 ## Contribution log
 
