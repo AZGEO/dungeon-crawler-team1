@@ -52,7 +52,7 @@ Choose cases that match the features actually implemented. Do not claim a featur
 - Total test cases: [Complete]
 - Passed: [Complete]
 - Failed: [Complete]
-- Known issues: [List honestly, or write “None known” after testing]
+- Known issues: [Complete]
 - Tested by: [Names]
 - Test date: [Date]
 
