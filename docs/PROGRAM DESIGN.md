@@ -48,6 +48,7 @@ The type number is the index in the monster arrays, and it is what you pass to M
 
 All files go in one folder (src) with no package statements. Each member edits only their own files, which avoids Git conflicts.
 
+//PARTS: Diri atoa mga parts na e code. Wala pa final na work split 
 | Part | Files (storage sa mga class) | Contents | Owner |
 |---|---|---|---|
 | 1 | Player.java | Stats, inventory array, using items | [Member] |
