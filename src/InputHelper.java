@@ -1,25 +1,20 @@
 import java.util.Scanner;
 
 /**
- * Validated console input. Every method reads a whole line with nextLine(), so
- * no leftover newline is ever left behind - that is the bug described in
- * PROGRAM DESIGN.md section 9 (reading a number and then a name with the same
- * Scanner).
- *
- * The signatures are the frozen contract from PROGRAM DESIGN.md section 7.
- * Do not rename them: Main, World and Battle all call these.
+Every method reads whole line with nextLine(),
+ * no leftover newline left behind 
  */
 public class InputHelper {
 
-    /**
-     * Read a whole line and keep asking until it is a number from min to max.
-     * Blank, non-numeric and out-of-range lines print a short message and ask
-     * again. The caller prints the menu itself; this only reports mistakes.
+    /*
+      Read  whole line and keep asking until its a number min to max.
+      if Blank, non-numeric, out-of-range lines, print to ask again.
      */
     public static int readInt(Scanner sc, int min, int max) {
         while (true) {
             if (!sc.hasNextLine()) {
-                throw new IllegalStateException("Input ended while waiting for a number.");
+                System.out.println("Input ended while waiting for text.");
+                System.exit(0);
             }
 
             String line = sc.nextLine().trim();
@@ -46,11 +41,12 @@ public class InputHelper {
         }
     }
 
-    /** Read a line and keep asking until it is not blank. Used for the player name. */
+    // Read line and keep asking until it is not blank (Used para sa player name)
     public static String readText(Scanner sc) {
         while (true) {
             if (!sc.hasNextLine()) {
-                throw new IllegalStateException("Input ended while waiting for text.");
+                System.out.println("Input ended while waiting for text.");
+                System.exit(0);
             }
 
             String line = sc.nextLine().trim();
