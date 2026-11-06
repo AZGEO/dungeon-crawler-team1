@@ -24,3 +24,4 @@ public class Battle {
         // and return the matching result code.
         throw new UnsupportedOperationException("TODO: Battle.fight");
     }
+}
