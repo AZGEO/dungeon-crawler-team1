@@ -1,6 +1,6 @@
 /**
  * PART 2 - Room.java (kauban sa World.java)
- * Owner: [pasulat lang sa pangalan]
+ * Owner: [lopez]
  *
  * Trabaho sa class nani: store ang info sa isa ka room: pangalan,
  * description, mga magawasan na room (exits), monster, loot, or kung cleared na.
