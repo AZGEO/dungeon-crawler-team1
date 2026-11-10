@@ -1,29 +1,30 @@
 /**
- * PART 2 - Room.java (kasama ng World.java)
- * Owner: [isulat ang pangalan mo dito]
+ * PART 2 - Room.java (kauban sa World.java)
+ * Owner: [pasulat lang sa pangalan]
  *
- * Trabaho ng class na ito: iimbak ang impormasyon ng isang kuwarto: pangalan,
- * description, mga labasan (exits), monster, loot, at kung cleared na.
- * Walang menu o input dito. Datos lang.
+ * Trabaho sa class nani: store ang info sa isa ka room: pangalan,
+ * description, mga magawasan na room (exits), monster, loot, or kung cleared na.
+ * Walay menu o e input diria, data lang jud sa room (check ang PROGRAM_DESIGN.md na file para makita nimo ang gamiton)
  *
- * Gamitin ang "starter" bilang gabay. Ang mga "TODO" ay ikaw ang magsusulat.
- * Huwag baguhin ang pangalan ng mga method (kontrata ng grupo, section 7).
- * Burahin ang guide comments at palitan ng sarili mong maikling comment
- * bago mag-commit.
+ * Gamita ang "starter" as guide. Ang mga "TODO" kay ikaw ang magbuhat.
+ * Ataw ra baguha ang pangalan sa mga methoddd
+ * Tanggali rani ang guide comments ug butang ang sarili nga short comments about sa code
+ bago mag commit ug change
  *
- * NOTE: Kailangan nito ang Monster class (Part 3). Habang wala pa siya,
- * magre-red ang "Monster" sa IntelliJ. Normal yan, hintayin ang push.
+ * NOTE: Need ani na file ang Monster class (Part 3). Habang wala pato,
+ * magre-red ang "Monster" sa IntelliJ. Normal rana hulata ra ang push sa imong kauban. 
+ as long as ma save lang ni and ako ra bahala mag adjust
  */
 public class Room {
 
     private String name;
     private String description;
-    private int[] exits;        // mga numero ng kuwartong puwedeng puntahan
-    private Monster monster;    // null kung walang monster
-    private String loot;        // null kung walang loot
-    private boolean cleared;    // false sa simula
+    private int[] exits;        // mga numero sa room puwede sudlan sa player
+    private Monster monster;    // null if no monster
+    private String loot;        // null if no loot
+    private boolean cleared;    // false pani sa start sa room
 
-    // STARTER: constructor. Ito ang tatawagin ng World.createRooms().
+    // STARTER: constructor. Kani ang tawagon na World.createRooms()
     public Room(String name, String description, int[] exits,
                 Monster monster, String loot) {
         this.name = name;
@@ -34,12 +35,24 @@ public class Room {
         this.cleared = false;
     }
 
-    // STARTER: halimbawa ng getter.
+    // STARTER: example ng getter
     public String getName() {
         return name;
     }
-
-    // TODO: ibalik ang description.
+// btw TODO kay simply mga method na wala pa nabuhat. 
+    // Ang "throw new UnsupportedOperationException(...)" kay ginabutang nako
+// *aron mo-error ang program kung gamiton na ang method nga wala pa nahuman.
+// * Ang error mo-ingon unsa nga method ang kulang.
+//UNSAON NI PAGHUMAN:
+// * 1. Basaha ang hint sa taas sa method
+// * 2. idelete ang throw nga linya
+// * 3. Isulat ang imong kaugalingong code
+// * 4. idelete pud ang TODO nga comment kung humana 
+ // * Kung naay TODO nga nahabilin sa katapusan, dili mo-gana ang program
+// Pangitaa ang "TODO" na nabilin (Ctrl+Shift+F sa IntelliJ if mag search)
+   
+    
+    // TODO: ibalik ang description
     public String getDescription() {
         throw new UnsupportedOperationException("TODO: Room.getDescription");
     }
@@ -49,12 +62,12 @@ public class Room {
         throw new UnsupportedOperationException("TODO: Room.getExits");
     }
 
-    // TODO: ibalik ang monster. Null kung walang monster. Okay lang yan.
+    // TODO: ibalik ang monster. Null kung walay monster. Okay rana
     public Monster getMonster() {
         throw new UnsupportedOperationException("TODO: Room.getMonster");
     }
 
-    // TODO: ibalik ang loot. Null kung walang loot.
+    // TODO: ibalik ang loot. Null kung walay loot.
     public String getLoot() {
         throw new UnsupportedOperationException("TODO: Room.getLoot");
     }
@@ -64,7 +77,7 @@ public class Room {
         throw new UnsupportedOperationException("TODO: Room.isCleared");
     }
 
-    // TODO: gawing true ang cleared.
+    // TODO: himoon true ang cleared.
     public void setCleared() {
         throw new UnsupportedOperationException("TODO: Room.setCleared");
     }
