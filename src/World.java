@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * PART 2 - World.java (kauban sa Room.java)
- * Owner: [pasulat ra sa pangalan]
+ * Owner: [lopez]
  *
  * Trabaho sa class nani: e form ang 6 ka room sa map (kung asa mahitabo ang dul),
  count kung pilang kuwarto na ang cleared, then ipakita ang exit menu para makapili ang 
