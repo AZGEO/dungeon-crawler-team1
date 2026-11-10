@@ -13,6 +13,18 @@
  * NOTE: Wala na ang gold (kwarta sa player na feautr). Walay GOLD array & walang getGold().
  * Ang Battle.java ang magsusulat sa battle loop.
  */
+
+// btw TODO kay simply mga method na wala pa nabuhat. 
+    // Ang "throw new UnsupportedOperationException(...)" kay ginabutang nako
+// *aron mo-error ang program kung gamiton na ang method nga wala pa nahuman.
+// * Ang error mo-ingon unsa nga method ang kulang.
+//UNSAON NI PAGHUMAN:
+// * 1. Basaha ang hint sa taas sa method
+// * 2. idelete ang throw nga linya
+// * 3. Isulat ang imong kaugalingong code
+// * 4. idelete pud ang TODO nga comment kung humana 
+ // * Kung naay TODO nga nahabilin sa katapusan, dili mo-gana ang program
+// Pangitaa ang "TODO" na nabilin (Ctrl+Shift+F sa IntelliJ if mag search)
 public class Monster {
 
     // Parallel arrays: pare-pareho ang index. Index 0 = Goblin, 1 = Skeleton,
