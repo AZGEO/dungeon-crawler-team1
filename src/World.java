@@ -1,32 +1,32 @@
 import java.util.Scanner;
 
 /**
- * PART 2 - World.java (kasama ng Room.java)
- * Owner: [isulat ang pangalan mo dito]
+ * PART 2 - World.java (kauban sa Room.java)
+ * Owner: [pasulat ra sa pangalan]
  *
- * Trabaho ng class na ito: buuin ang 6 na kuwarto (ang mapa), bilangin kung
- * ilang kuwarto na ang cleared, at ipakita ang exit menu para makapili ang
- * player ng susunod na kuwarto. Dito rin ang lock ng boss room.
+ * Trabaho sa class nani: e form ang 6 ka room sa map (kung asa mahitabo ang dul),
+ count kung pilang kuwarto na ang cleared, then ipakita ang exit menu para makapili ang 
+ * player sa susunod na room. Diri sad ang lock kung asang boss room.
  *
- * Ang mga "STARTER" ay halimbawa. Ang mga "TODO" ay ikaw ang magsusulat.
- * Huwag baguhin ang pangalan at parameters ng method (kontrata, section 7).
- * Burahin ang guide comments at palitan ng sarili mong maikling comment
- * bago mag-commit.
+ * Ang mga "STARTER" kay example. Ang mga "TODO" kay ikaw ang magsusulat (ikaw bahala)
+ * Ayaw baguhi ang pangalan & parameters sa method pls
+ * idelete ang guide comments and e change into saimong comment (ikaw bahala) 
+ bago mag-commit
  *
- * Ang mapa ay nasa PROGRAM_DESIGN.md section 3. Ang type number ng monster
- * ay nasa section 4: Goblin 0, Skeleton 1, Bat 2, Ghoul 3, Dungeon Lord 4.
+ * Ang mapa kay nasa PROGRAM_DESIGN.md section 3. Ang type number ng monster
+ * kay nasa section 4: Goblin 0, Skeleton 1, Bat 2, Ghoul 3, Dungeon Lord 4.
  */
 public class World {
 
-    // Shared constants. Gamitin ang mga ito, huwag mag-type ng 5 o 3 sa ibang code.
+    // Shared constants. Gamiton  ni, ayaw lang pag-type ng 5 o 3 sa lain code.
     public static final int BOSS_ROOM = 5;
     public static final int ROOMS_TO_UNLOCK = 3;
 
-    // Gagawa ng 6 na kuwarto. Ang index ng array ay ang numero ng kuwarto.
+    // Create ng 6 ka rooms. Ang index ng array kay ang number sa room
     public static Room[] createRooms() {
         Room[] rooms = new Room[6];
 
-        // STARTER: kuwarto 0 at 1. Walang monster ang 0, kaya null.
+        // STARTER: kuwarto 0 ug 1. Walay monster ang 0, entrance hall man, dira magsugod ang player kaya null.
         rooms[0] = new Room("Entrance Hall",
                 "A cold stone hall with two doorways.",
                 new int[]{1, 2}, null, null);
@@ -34,30 +34,30 @@ public class World {
                 "Rusty weapons hang on the walls.",
                 new int[]{0, 3}, new Monster(0), Player.POTION);
 
-        // TODO: gawin ang rooms[2] hanggang rooms[5] gamit ang mapa sa
-        // PROGRAM_DESIGN.md section 3. Isulat ang sarili mong description.
-        // Para sa Boss Chamber, ang monster ay new Monster(4) at walang loot.
+        // TODO: create ang rooms[2] hantod rooms[5] gamit ang mapa sa
+        // PROGRAM_DESIGN.md section 3. Isulat ang sarili nimong description.
+        // Para sa Boss Chamber, ang monster ay new Monster(4) ug wala nana siyay loot.
 
         return rooms;
     }
 
-    // TODO: bilangin ang mga kuwartong cleared na.
-    // Hint: int count = 0, for loop sa rooms, kung rooms[i].isCleared()
+    // TODO: count ang mga rooms cleared na.
+    // like: int count = 0, for loop sa rooms, kung rooms[i].isCleared()
     // dagdagan ang count. Ibalik ang count.
     public static int countCleared(Room[] rooms) {
         throw new UnsupportedOperationException("TODO: World.countCleared");
     }
 
-    // TODO: ipakita ang exits ng kasalukuyang kuwarto at ibalik ang napili.
-    // Mga hakbang:
+    // TODO: ipakita ang exits ng current na kuwarto and ibalik ang napili.
+    // Mga steps:
     //  1. int[] exits = rooms[current].getExits();
     //  2. for loop: i-print ang "1. Armory", "2. Cellar" ... gamit ang
-    //     rooms[exits[i]].getName(). Menu ay nagsisimula sa 1, array sa 0.
+    //     rooms[exits[i]].getName(). Menu ay mag start sa 1, array sa 0.
     //  3. int choice = InputHelper.readInt(sc, 1, exits.length);
     //  4. int chosen = exits[choice - 1];
     //  5. Kung chosen == BOSS_ROOM at clearedCount < ROOMS_TO_UNLOCK:
-    //     mag-print na naka-lock pa ito, at return current.
-    //  6. Kung hindi, return chosen.
+    //     mag-print na naka-lock pa ang room, and then mag return sa current.
+    //  6. Kung dili, return chosen.
     public static int chooseExit(Room[] rooms, int current, int clearedCount,
                                  Scanner sc) {
         throw new UnsupportedOperationException("TODO: World.chooseExit");
