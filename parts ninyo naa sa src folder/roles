@@ -2,5 +2,28 @@
 // Labra - player.java
 // Mamalias - Monster.java
 // Consencino - Main.java (to-be-made pa)
-// since wala pako kabuhat sa main, dili jud mudagan inyong mga program
+// since wala pako kabuhat sa main.java, dili jud mudagan inyong mga program
 // basta i commit(save) & push(send) lang ninyo ang code 
+
+
+// also clarify ra nako na dili ninyo diretso na e code dira sa folder inyong mga files:
+
+// maghimo mog inyong sariling branch each (like one member maghimo branch named "part/player", and lahi sad sa uban 
+
+//ang workflow:
+// 1. clone ninyo ang tibuok repository:
+// (Download ang project to ur computer gamit intellij)
+// (sample: " git clone ang_repository_URL ")
+// 2. pull ang latest changest para ma sync ang inyong local project
+//(sample: git pull origin main)
+//3. create branch
+//4. work sa inyong file 
+//5. commit change
+//6. push inyong branch sa github
+// (sample: git push -u origin part/player)
+// 7. pag "pull request"
+// sa github makakita mog option na mag create pull request
+//(sample: "base: main then compare: part/player")
+//then submit inyong pull request para makita nako (since ako ang na owner sa repo)
+
+//para sure isend nalang sad inyong mga java file sa messenger
