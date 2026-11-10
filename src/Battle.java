@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 /**
- * The turn-based battle loop.
+ * Ang turn-based battle loop.
  *
- * SKELETON: the signature below is the frozen contract from
- * PROGRAM DESIGN.md section 7. Do not rename it.
+ * SKELETON
  */
 public class Battle {
 
