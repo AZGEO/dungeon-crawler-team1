@@ -1,24 +1,23 @@
 /**
- * PART 3 - Monster.java (kasama ng Battle.java, na nasa repo na)
- * Owner: [isulat ang pangalan mo dito]
+ * PART 3 - Monster.java (kauban sa Battle.java (akoa)), na nasa repo na)
+ * Owner: mamalias
+ * Trabaho sa class nani: e stire ang stats sa isa ka monster (name, HP,
+ * attack). Ang stats ay gikan sa mga parallel array sa ubos. Ang "type"
+ * number kay ang index sa mga array. Wala nay menu or input diri
  *
- * Trabaho ng class na ito: iimbak ang stats ng isang monster (pangalan, HP,
- * attack). Ang stats ay galing sa mga parallel array sa baba. Ang "type"
- * number ay ang index sa mga array. Walang menu o input dito.
- *
- * Ang mga "STARTER" ay tapos na. Ang mga "TODO" ay ikaw ang magsusulat.
- * Huwag baguhin ang pangalan at parameters ng method (kontrata, section 7).
- * Burahin ang guide comments at palitan ng sarili mong maikling comment
+ * Ang mga "STARTER" kay tapos na. Ang mga "TODO" may ikaw ang magbutang.
+ * Ayaw jud baguhi ang pangalan at parameters sa mga method pls
+ * idelete ang guide comments nani ug at e swap ang sarili nimong short comment
  * bago mag-commit.
  *
- * NOTE: Wala na ang gold. Walang GOLD array at walang getGold().
- * Ang Battle.java ang magsusulat ng battle loop. Hindi niya hahawakan ang gold.
+ * NOTE: Wala na ang gold (kwarta sa player na feautr). Walay GOLD array & walang getGold().
+ * Ang Battle.java ang magsusulat sa battle loop.
  */
 public class Monster {
 
     // Parallel arrays: pare-pareho ang index. Index 0 = Goblin, 1 = Skeleton,
     // 2 = Bat, 3 = Ghoul, 4 = Dungeon Lord (boss).
-    // Placeholder pa ang numbers, puwedeng i-tune habang nagte-test.
+    // Placeholder pa ang numbers, puwede i-tune habang nagtetest.
     private static final String[] NAMES = {
         "Goblin", "Skeleton", "Bat", "Ghoul", "Dungeon Lord"
     };
@@ -27,10 +26,10 @@ public class Monster {
 
     private String name;
     private int hp;
-    private int maxHp;     // para sa resetHp() kapag tumakbo ang player
+    private int maxHp;     // para sa resetHp() kapag ang player kay mag choose na muhawa
     private int attack;
 
-    // STARTER: constructor. Kinukuha ang stats sa array gamit ang type.
+    // STARTER: constructor. Ginakuha ang stats sa array gamit ang type.
     public Monster(int type) {
         this.name = NAMES[type];
         this.maxHp = HP[type];
@@ -43,7 +42,7 @@ public class Monster {
         return name;
     }
 
-    // TODO: ibalik ang kasalukuyang HP.
+    // TODO: ibalik ang current HP.
     public int getHp() {
         throw new UnsupportedOperationException("TODO: Monster.getHp");
     }
@@ -53,18 +52,18 @@ public class Monster {
         throw new UnsupportedOperationException("TODO: Monster.getAttack");
     }
 
-    // TODO: ibawas ang amount sa HP pero HINDI bababa sa 0.
-    // Hint: tingnan kung paano ginawa ang Player.takeDamage.
+    // TODO: ibawas ang amount sa HP pero DILI mubaba sa 0. lain sad negative ang hp
+    // btw: awa kung giunsa gihimo ang Player.takeDamage.
     public void takeDamage(int amount) {
         throw new UnsupportedOperationException("TODO: Monster.takeDamage");
     }
 
-    // TODO: true kung HP ay mas mataas sa 0.
+    // TODO: true kung HP is above sa 0.
     public boolean isAlive() {
         throw new UnsupportedOperationException("TODO: Monster.isAlive");
     }
 
-    // TODO: ibalik ang HP sa maxHp. Ginagamit kapag tumakbo ang player.
+    // TODO: ibalik ang HP sa maxHp. Gamiton if the player chooses na muhawa sa monster
     public void resetHp() {
         throw new UnsupportedOperationException("TODO: Monster.resetHp");
     }
